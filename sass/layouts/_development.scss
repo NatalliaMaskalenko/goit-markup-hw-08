@@ -1,0 +1,37 @@
+.development {
+  padding-bottom: 94px;
+}
+
+.development__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.development__item {
+  position: relative;
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.development__text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+
+  padding: 27px 0 27px 0;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: var(--background-color-work);
+
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
