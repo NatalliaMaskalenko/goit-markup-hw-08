@@ -20,14 +20,14 @@
 
   <body>
     <!-- Шапка страницы -->
-    <!-- <header class="header"> -->
-    <!-- Навигация -->
-    <!-- <div class="container header__container">
+    <header class="header">
+      <!-- Навигация -->
+      <div class="container header__container">
         <nav class="main-nav">
           <a class="logo logo__header" href="./index.html">
             Web<span class="logo--dark">Studio</span></a
           >
-          <ul class="pagination list">
+          <ul class="pagination list desktop">
             <li class="pagination__item">
               <a
                 class="pagination__link link--fixed-size current"
@@ -50,9 +50,9 @@
               >
             </li>
           </ul>
-        </nav> -->
-    <!-- Для связи -->
-    <!-- <ul class="contacts list">
+        </nav>
+        <!-- Для связи -->
+        <ul class="contacts list desktop">
           <li class="contacts__item">
             <a
               class="contacts__link link--fixed-size"
@@ -73,8 +73,78 @@
             >
           </li>
         </ul>
+
+        <button class="mobile-menu__btn">
+          <svg class="mobile-menu__icon" width="24" height="20">
+            <use
+              class="icon__menu--header"
+              href="./images/background/icons.svg#icon-close_24px"
+            ></use>
+            <use
+              class="icon__close--header"
+              href="./images/background/icons.svg#icon-menu_24px"
+            ></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile__menu">
+      <ul class="pagination list">
+        <li class="pagination__item">
+          <a
+            class="pagination__link link--fixed-size current"
+            href="./index.html"
+            >Студия</a
+          >
+        </li>
+
+        <li class="pagination__item">
+          <a class="pagination__link link--fixed-size" href="./portfolio.html"
+            >Портфолио</a
+          >
+        </li>
+
+        <li class="pagination__item">
+          <a class="pagination__link link--fixed-size" href="/Контакты"
+            >Контакты</a
+          >
+        </li>
+      </ul>
+
+      <ul class="contacts list">
+        <li class="contacts__item">
+          <a class="contacts__link link--fixed-size" href="tel:+380961111111">
+            +38 096 111 11 11</a
+          >
+        </li>
+
+        <li class="contacts__item">
+          <a
+            class="contacts__link contacts__link--mail link--fixed-size"
+            href="mailto:info@devstudio.com"
+          >
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="networks list">
+        <li class="networks__item">
+          <a class="networks__link" href="">Instagram</a>
+        </li>
+        <li class="networks__item">
+          <a class="networks__link" href="">Twitter</a>
+        </li>
+        <li class="networks__item">
+          <a class="networks__link" href="">Facebook</a>
+        </li>
+        <li class="networks__item">
+          <a class="networks__link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <!-- Контент страницы -->
     <main>
       <!-- Герой -->
@@ -152,6 +222,7 @@
           </ul>
         </div>
       </section>
+
       <!-- Чем мы занимаемся -->
       <section class="development">
         <div class="container">
@@ -496,13 +567,13 @@
                     ./images/team/mobile/Michail-mobile.jpg,
                     ./images/team/mobile/Michail-mobile@2x.jpg
                   "
-                  media="(max-width:767px)"
+                  media="(max-width:767px)" />
+                <img
+                  src="./images/team/tablet/Michail-tablet.jpg"
+                  width="450"
+                  alt="Фото Михаила Ермакова"
               /></picture>
-              <img
-                src="./images/team/tablet/Michail-tablet.jpg"
-                width="450"
-                alt="Фото Михаила Ермакова"
-              />
+
               <div class="team__content">
                 <h3 class="team__member">Михаил Ермаков</h3>
                 <p class="team__position" lang="en">UI Designer</p>
@@ -625,7 +696,7 @@
       </section>
     </main>
     <!-- Подвал страницы -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__container">
           <section class="footer__section">
@@ -717,8 +788,8 @@
             <h2 class="footer__title">Подпишитесь на рассылку</h2>
             <form class="mailing-form">
               <input
-                type="email"
                 class="mailing-form__field"
+                type="email"
                 name="email"
                 placeholder="E-mail"
               />
@@ -734,7 +805,8 @@
           </section>
         </div>
       </div>
-    </footer> -->
+    </footer>
+
     <!-- Модальное окно - ЗАКАЗАТЬ УСЛУГУ -->
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
