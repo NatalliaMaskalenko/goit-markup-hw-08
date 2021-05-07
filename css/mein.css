@@ -932,10 +932,32 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team__cards {
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
 @media screen and (min-width: 768px) {
   .team__cards {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+.team__item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc(100% / 4 - 30px);
   }
 }
 
