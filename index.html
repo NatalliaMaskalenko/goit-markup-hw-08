@@ -74,14 +74,14 @@
           </li>
         </ul>
 
-        <button class="mobile-menu__btn">
+        <button class="mobile-menu__btn" data-menu-button>
           <svg class="mobile-menu__icon" width="24" height="20">
             <use
-              class="icon__menu--header"
+              class="icon__close--header"
               href="./images/background/icons.svg#icon-close_24px"
             ></use>
             <use
-              class="icon__close--header"
+              class="icon__menu--header"
               href="./images/background/icons.svg#icon-menu_24px"
             ></use>
           </svg>
@@ -90,7 +90,7 @@
     </header>
 
     <!-- Мобильное меню -->
-    <div class="mobile__menu">
+    <div class="mobile__menu" data-menu>
       <ul class="pagination list">
         <li class="pagination__item">
           <a
@@ -113,37 +113,39 @@
         </li>
       </ul>
 
-      <ul class="contacts list">
-        <li class="contacts__item">
-          <a class="contacts__link link--fixed-size" href="tel:+380961111111">
-            +38 096 111 11 11</a
-          >
-        </li>
+      <div>
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link link--fixed-size" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
 
-        <li class="contacts__item">
-          <a
-            class="contacts__link contacts__link--mail link--fixed-size"
-            href="mailto:info@devstudio.com"
-          >
-            info@devstudio.com</a
-          >
-        </li>
-      </ul>
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--mail link--fixed-size"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
 
-      <ul class="networks list">
-        <li class="networks__item">
-          <a class="networks__link" href="">Instagram</a>
-        </li>
-        <li class="networks__item">
-          <a class="networks__link" href="">Twitter</a>
-        </li>
-        <li class="networks__item">
-          <a class="networks__link" href="">Facebook</a>
-        </li>
-        <li class="networks__item">
-          <a class="networks__link" href="">LinkedIn</a>
-        </li>
-      </ul>
+        <ul class="networks list">
+          <li class="networks__item">
+            <a class="networks__link" href="">Instagram</a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__link" href="">Twitter</a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__link" href="">Facebook</a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- Контент страницы -->
     <main>
@@ -877,5 +879,6 @@
       </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

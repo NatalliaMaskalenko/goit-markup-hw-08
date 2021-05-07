@@ -26,8 +26,13 @@
 
   .header__container {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .header__container {
+      align-items: center;
+      justify-content: flex-end;
+    }
   }
 
   .main-nav {
