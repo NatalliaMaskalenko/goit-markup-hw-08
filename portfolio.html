@@ -26,7 +26,7 @@
           <a class="logo logo__header" href="./index.html">
             Web<span class="logo--dark">Studio</span></a
           >
-          <ul class="pagination list">
+          <ul class="pagination list desktop">
             <li class="pagination__item">
               <a class="pagination__link link--fixed-size" href="./index.html"
                 >Студия</a
@@ -49,7 +49,7 @@
           </ul>
         </nav>
         <!-- Для связи -->
-        <ul class="contacts list">
+        <ul class="contacts list desktop">
           <li class="contacts__item">
             <a
               class="contacts__link link--fixed-size"
@@ -70,8 +70,80 @@
             >
           </li>
         </ul>
+
+        <button class="mobile-menu__btn" data-menu-button>
+          <svg class="mobile-menu__icon" width="24" height="20">
+            <use
+              class="icon__close--header"
+              href="./images/background/icons.svg#icon-close_24px"
+            ></use>
+            <use
+              class="icon__menu--header"
+              href="./images/background/icons.svg#icon-menu_24px"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile__menu" data-menu>
+      <ul class="pagination list">
+        <li class="pagination__item">
+          <a
+            class="pagination__link link--fixed-size current"
+            href="./index.html"
+            >Студия</a
+          >
+        </li>
+
+        <li class="pagination__item">
+          <a class="pagination__link link--fixed-size" href="./portfolio.html"
+            >Портфолио</a
+          >
+        </li>
+
+        <li class="pagination__item">
+          <a class="pagination__link link--fixed-size" href="/Контакты"
+            >Контакты</a
+          >
+        </li>
+      </ul>
+
+      <div>
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link link--fixed-size" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--mail link--fixed-size"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="networks list">
+          <li class="networks__item">
+            <a class="networks__link" href="">Instagram</a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__link" href="">Twitter</a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__link" href="">Facebook</a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- Контент страницы -->
     <main>
       <section class="portfolio">
@@ -111,12 +183,32 @@
             <li class="gallery__item">
               <a class="gallery__link" href="/">
                 <div class="gallery__animation">
-                  <img
-                    src="./images/Portfolio/tehnokryak.jpg"
-                    width="370"
-                    height="294"
-                    alt="Ноутбук"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/tehnokryak-desktop.jpg,
+                        ./images/Portfolio/desktop/tehnokryak-desktop@2.jpg
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/tehnokryak-tablet.jpg,
+                        ./images/Portfolio/tablet/tehnokryak-tablet@2.jpg
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/tehnokryak-mobile.jpg,
+                        ./images/Portfolio/mobile/tehnokryak-mobile@2.jpg
+                      "
+                      media="(max-width:767px)" />
+
+                    <img
+                      src="./images/Portfolio/desktop/tehnokryak-desktop.jpg"
+                      width="450"
+                      alt="Ноутбук"
+                  /></picture>
+
                   <p class="gallery__text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -133,12 +225,31 @@
             <li class="gallery__item">
               <a class="gallery__link" href="/">
                 <div class="gallery__animation">
-                  <img
-                    src="./images/Portfolio/neworlean.jpg"
-                    width="370"
-                    height="294"
-                    alt="Два парня играют в баскутбол"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/neworlean-desktop.jpg,
+                        ./images/Portfolio/desktop/neworlean-desktop@2.jpg
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/neworlean-tablet.jpg,
+                        ./images/Portfolio/tablet/neworlean-tablet@2.jpg
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/neworlean-mobile.jpg,
+                        ./images/Portfolio/mobile/neworlean-mobile@2.jpg
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/Portfolio/desktop/neworlean-desktop.jpg"
+                      width="450"
+                      alt="Два парня играют в баскетбол"
+                  /></picture>
+
                   <p class="gallery__text"></p>
                 </div>
                 <div class="gallery__container">
@@ -153,12 +264,31 @@
             <li class="gallery__item">
               <a class="gallery__link" href="/">
                 <div class="gallery__animation">
-                  <img
-                    src="./images/Portfolio/seafood.jpg"
-                    width="370"
-                    height="294"
-                    alt="Логотип ресторана Seafood "
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/seafood-desktop.jpg,
+                        ./images/Portfolio/desktop/seafood-desktop@2.jpg
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/seafood-tablet.jpg,
+                        ./images/Portfolio/tablet/seafood-tablet@2.jpg
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/seafood-mobile.jpg,
+                        ./images/Portfolio/mobile/seafood-mobile@2.jpg
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/Portfolio/desktop/seafood-desktop.jpg"
+                      width="450"
+                      alt="Логотип ресторана Seafood "
+                  /></picture>
+
                   <p class="gallery__text"></p>
                 </div>
                 <div class="gallery__container">
@@ -171,12 +301,31 @@
             <li class="gallery__item">
               <a class="gallery__link" href="/">
                 <div class="gallery__animation">
-                  <img
-                    src="./images/Portfolio/prime.jpg"
-                    width="370"
-                    height="294"
-                    alt="Наушники"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/prime-desktop.jpg,
+                        ./images/Portfolio/desktop/prime-desktop@2.jpg
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/prime-tablet.jpg,
+                        ./images/Portfolio/tablet/prime-tablet@2.jpg
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/prime-mobile.jpg,
+                        ./images/Portfolio/mobile/prime-mobile@2.jpg
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/Portfolio/desktop/prime-desktop.jpg"
+                      width="450"
+                      alt="Наушники"
+                  /></picture>
+
                   <p class="gallery__text"></p>
                 </div>
                 <div class="gallery__container">
@@ -189,12 +338,31 @@
             <li class="gallery__item">
               <a class="gallery__link" href="/">
                 <div class="gallery__animation">
-                  <img
-                    src="./images/Portfolio/boxes.jpg"
-                    width="370"
-                    height="294"
-                    alt="Две картонные коробки"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/boxes-desktop.jpg,
+                        ./images/Portfolio/desktop/boxes-desktop@2.jpg
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/boxes-tablet.jpg,
+                        ./images/Portfolio/tablet/boxes-tablet@2.jpg
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/boxes-mobile.jpg,
+                        ./images/Portfolio/mobile/boxes-mobile@2.jpg
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/Portfolio/desktop/boxes-desktop.jpg"
+                      width="450"
+                      alt="Две картонные коробки"
+                  /></picture>
+
                   <p class="gallery__text"></p>
                 </div>
                 <div class="gallery__container">
@@ -207,12 +375,30 @@
             <li class="gallery__item">
               <a class="gallery__link" href="/">
                 <div class="gallery__animation">
-                  <img
-                    src="./images/Portfolio/inspiration-has-no-borders.jpg"
-                    width="370"
-                    height="294"
-                    alt="Манитор"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/desktop/inspiration-has-no-borders-desktop.jpg,
+                        ./images/Portfolio/desktop/inspiration-has-no-borders-desktop@2.jpg
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/Portfolio/tablet/inspiration-has-no-borders-tablet.jpg,
+                        ./images/Portfolio/tablet/inspiration-has-no-borders-tablet@2.jpg
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./images/Portfolio/mobile/inspiration-has-no-borders-mobile.jpg,
+                        ./images/Portfolio/mobile/inspiration-has-no-borders-mobile@2.jpg
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/Portfolio/desktop/inspiration-has-no-borders-desktop.jpg"
+                      width="450"
+                      alt="Монитор"
+                  /></picture>
                   <p class="gallery__text"></p>
                 </div>
                 <div class="gallery__container">
@@ -225,12 +411,31 @@
             <li class="gallery__item">
               <a class="gallery__link" href="/">
                 <div class="gallery__animation">
-                  <img
-                    src="./images/Portfolio/limited-edition.jpg"
-                    width="370"
-                    height="294"
-                    alt="Открытый журнал"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/desktop/limited-edition-desktop.jpg,
+                        /images/Portfolio/desktop/limited-edition-desktop@2.jpg
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/Portfolio/tablet/limited-edition-tablet.jpg,
+                        ./images/Portfolio/tablet/limited-edition-tablet@2.jpg
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/limited-edition-mobile.jpg,
+                        ./images/Portfolio/mobile/limited-edition-mobile@2.jpg
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/Portfolio/desktop/limited-edition-desktop.jpg"
+                      width="450"
+                      alt="Открытый журнал"
+                  /></picture>
+
                   <p class="gallery__text"></p>
                 </div>
                 <div class="gallery__container">
@@ -243,12 +448,31 @@
             <li class="gallery__item">
               <a class="gallery__link" href="/">
                 <div class="gallery__animation">
-                  <img
-                    src="./images/Portfolio/lab.jpg"
-                    width="370"
-                    height="294"
-                    alt="Этикетка"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/lad-desktop.jpg,
+                        ./images/Portfolio/desktop/lad-desktop@2.jpg
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/lad-tablet.jpg,
+                        ./images/Portfolio/tablet/lad-tablet@2.jpg
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/lad-mobile.jpg,
+                        ./images/Portfolio/mobile/lad-mobile@2.jpg
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/Portfolio/desktop/lad-desktop.jpg"
+                      width="450"
+                      alt="Этикетка"
+                  /></picture>
+
                   <p class="gallery__text"></p>
                 </div>
                 <div class="gallery__container">
@@ -261,12 +485,31 @@
             <li class="gallery__item">
               <a class="gallery__link" href="/">
                 <div class="gallery__animation">
-                  <img
-                    src="./images/Portfolio/growing-business.jpg"
-                    width="370"
-                    height="294"
-                    alt="Человек работает на компьютере"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/growing-business-desktop.jpg,
+                        ./images/Portfolio/desktop/growing-business-desktop@2.jpg
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/growing-business-tablet.jpg,
+                        ./images/Portfolio/tablet/growing-business-tablet@2.jpg
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/growing-business-mobile.jpg,
+                        ./images/Portfolio/mobile/growing-business-mobile@2.jpg
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/Portfolio/desktop/growing-business-desktop.jpg"
+                      width="450"
+                      alt="Человек работает на компьютере"
+                  /></picture>
+
                   <p class="gallery__text"></p>
                 </div>
                 <div class="gallery__container">
