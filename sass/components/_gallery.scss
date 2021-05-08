@@ -40,7 +40,7 @@
 
 .gallery__text {
   position: absolute;
-  top: 138%;
+  top: 150%;
   left: 0;
   height: 100%;
   width: 100%;
@@ -68,6 +68,12 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+
+.gallery__container--big {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    padding: 20px 24px 56px 24px;
+  }
 }
 
 .gallery__title {
