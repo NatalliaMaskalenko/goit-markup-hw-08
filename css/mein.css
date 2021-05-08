@@ -1170,6 +1170,12 @@ img {
   padding-bottom: 16px;
 }
 
+@media screen and (max-width: 1200px) {
+  .title__team {
+    margin-bottom: 60px;
+  }
+}
+
 .team__member {
   color: var(--color-text-major);
   font-weight: 500;

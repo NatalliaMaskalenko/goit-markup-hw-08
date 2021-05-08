@@ -12,6 +12,12 @@
   padding-bottom: 16px;
 }
 
+.title__team {
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 60px;
+  }
+}
+
 .team__member {
   color: var(--color-text-major);
 
